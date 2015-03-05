@@ -14,10 +14,9 @@ html {
     color: #fff; }
 
 .main-content {
-  width: 900px;
-  height: 800px;
+  width: 80%;
   margin: 10px auto;
-  padding: 50px;
+  padding: 30px;
   background-color: #999; }
   .main-content .profile-pic {
     height: 150px;
@@ -27,7 +26,7 @@ html {
     border-radius: 20px;
     border: 2px solid #fff;
     box-shadow: 0 0 20px 0 #000; }
-  .main-content h3 {
+  .main-content h4 {
     text-indent: 50px; }
 
 /*# sourceMappingURL=main.css.map */
