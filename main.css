@@ -5,28 +5,85 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div {
 html {
   font-family: Helvetica, Arial, sans-serif; }
 
+body {
+  background: url(images/blue_background.jpg);
+  background-size: cover; }
+
 .header {
-  padding: 20px 10px 10px 10px;
+  background: url(images/white_texture.jpg);
+  background-size: 100% 100%;
   width: 100%;
-  height: 100px;
-  background-color: #000; }
+  background-color: #fff;
+  border-bottom: 2px solid #555;
+  box-shadow: 0 0 20px 0 #000; }
+  .header img {
+    margin: 10px 10px 0 10px; }
   .header h1 {
-    color: #fff; }
+    color: #000; }
 
 .main-content {
-  width: 80%;
+  width: 1000px;
   margin: 10px auto;
   padding: 30px;
-  background-color: #999; }
-  .main-content .profile-pic {
-    height: 150px;
-    width: 150px;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 #000; }
+  .main-content .main-info {
     float: left;
-    margin: 10px;
-    border-radius: 20px;
-    border: 2px solid #fff;
-    box-shadow: 0 0 20px 0 #000; }
-  .main-content h4 {
-    text-indent: 50px; }
+    width: 700px; }
+    .main-content .main-info .profile-pic {
+      height: 350px;
+      width: 350px;
+      float: left;
+      margin: 10px;
+      margin-bottom: 5px;
+      border-radius: 20px;
+      border: 2px solid #fff;
+      box-shadow: 0 0 20px 0 #000; }
+    .main-content .main-info h4 {
+      line-height: 1.4;
+      color: #333; }
+    .main-content .main-info .center-content {
+      margin-left: 70px;
+      text-align: center; }
+      .main-content .main-info .center-content .project-links {
+        height: 50px;
+        width: 500px; }
+      .main-content .main-info .center-content div {
+        background: url(images/dark_texture.jpg);
+        margin: 30px;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px 5px #000; }
+        .main-content .main-info .center-content div:hover {
+          box-shadow: 0 0 5px 3px #000; }
+    .main-content .main-info iframe {
+      width: 600px;
+      height: 500px;
+      padding-top: 10px;
+      padding-bottom: 20px; }
+  .main-content .side-options {
+    width: 250px;
+    height: 500px;
+    background-color: #000;
+    float: right; }
+    .main-content .side-options div {
+      width: 80%;
+      height: 100px;
+      background-color: #fff;
+      margin: 20px auto;
+      text-align: center;
+      border-top: 3px solid #999;
+      border-left: 3px solid #999;
+      border-radius: 5px; }
+      .main-content .side-options div:hover {
+        box-shadow: 0 0 20px 0 #fff; }
+      .main-content .side-options div p {
+        font-size: 2em; }
+
+.clear {
+  clear: both; }
+
+.indent-text {
+  text-indent: 30px; }
 
 /*# sourceMappingURL=main.css.map */
