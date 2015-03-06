@@ -55,15 +55,16 @@ body {
 				width: 500px;
 			}
 			div {
+				height: 80px;
 				background: url(images/dark_texture.jpg);
 				margin: 30px;
-				padding: 20px;
 				border-radius: 20px;
 				box-shadow: 0 0 10px 5px #000;
 				&:hover {
 					box-shadow: 0 0 5px 3px #000;
 				}
 			}
+
 		}
 		iframe {
 			width: 600px;
