@@ -1,4 +1,4 @@
-html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div {
+html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, p {
   margin: 0;
   padding: 0; }
 
@@ -6,15 +6,15 @@ html {
   font-family: Helvetica, Arial, sans-serif; }
 
 body {
-  background: url(images/blue_background.jpg);
+  background: url(images/beach.jpg);
   background-size: cover; }
 
 .header {
-  background: url(images/white_texture.jpg);
+  background: url(images/brown_texture.jpg);
   background-size: 100% 100%;
   width: 100%;
   background-color: #fff;
-  border-bottom: 2px solid #555;
+  border-bottom: 2px solid #ddd;
   box-shadow: 0 0 20px 0 #000; }
   .header img {
     margin: 10px 10px 0 10px; }
@@ -23,40 +23,115 @@ body {
 
 .main-content {
   width: 1000px;
-  margin: 10px auto;
-  padding: 30px;
-  background-color: #fff;
-  box-shadow: 0 0 20px 0 #000; }
-  .main-content .main-info {
+  margin: 50px auto;
+  padding: 40px;
+  background: url(images/bamboo.jpg);
+  box-shadow: 0 0 20px 2px #000;
+  border-radius: 100px;
+  border: 2px solid #fff; }
+  .main-content .projects-tab, .main-content .interests-tab, .main-content .videos-tab, .main-content .contact-tab {
+    position: relative;
+    height: 70px;
+    width: 150px;
+    -ms-transform: translate(50px, 100px);
+    /* IE 9 */
+    -webkit-transform: translate(50px, 100px);
+    /* Safari */
+    transform: translate(20px, -20px);
+    border-radius: 30px;
+    border: 3px solid #fff;
+    text-align: center; }
+    .main-content .projects-tab p, .main-content .interests-tab p, .main-content .videos-tab p, .main-content .contact-tab p {
+      padding-top: 15px;
+      color: #fff;
+      font-size: 2em; }
+  .main-content .projects-tab {
+    background: -webkit-linear-gradient(#ffcc00, #cc9900);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffcc00, #cc9900);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffcc00, #cc9900);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffcc00, #cc9900); }
+  .main-content .interests-tab {
+    background: -webkit-linear-gradient(#ff9900, #cc6600);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ff9900, #cc6600);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ff9900, #cc6600);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ff9900, #cc6600); }
+  .main-content .videos-tab {
+    background: -webkit-linear-gradient(#0033cc, #000066);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0033cc, #000066);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0033cc, #000066);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0033cc, #000066); }
+  .main-content .contact-tab {
+    background: -webkit-linear-gradient(#0099cc, #006666);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0099cc, #006666);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0099cc, #006666);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0099cc, #006666); }
+  .main-content .first {
+    box-shadow: -2px -2px 30px 8px #000;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px; }
+  .main-content .second {
+    box-shadow: -2px -2px 30px 8px #000;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px; }
+  .main-content .section {
+    position: relative;
+    margin-bottom: 60px;
     float: left;
     width: 700px; }
-    .main-content .main-info .profile-pic {
-      height: 350px;
-      width: 350px;
+    .main-content .section .profile-pic {
+      height: 250px;
+      width: 250px;
       float: left;
       margin: 10px;
-      margin-bottom: 5px;
-      border-radius: 20px;
-      border: 2px solid #fff;
-      box-shadow: 0 0 20px 0 #000; }
-    .main-content .main-info h4 {
+      margin: 10px -20px -30px 10px;
+      border-radius: 80px 50px 50px 50px;
+      border-top: 5px solid #fff;
+      border-left: 5px solid #fff;
+      -ms-transform: translate(-30px, -30px);
+      /* IE 9 */
+      -webkit-transform: translate(-30px, -30px);
+      /* Safari */
+      transform: translate(-30px, -30px); }
+    .main-content .section h4 {
       line-height: 1.4;
-      color: #333; }
-    .main-content .main-info .center-content {
+      color: #000;
+      padding: 15px; }
+    .main-content .section .center-content {
       margin-left: 70px;
       text-align: center; }
-      .main-content .main-info .center-content .project-links {
+      .main-content .section .center-content .project-links {
+        margin-top: 15px;
         height: 50px;
         width: 500px; }
-      .main-content .main-info .center-content div {
+      .main-content .section .center-content div {
         height: 80px;
-        background: url(images/dark_texture.jpg);
+        background: #fff;
         margin: 30px;
         border-radius: 20px;
         box-shadow: 0 0 10px 5px #000; }
-        .main-content .main-info .center-content div:hover {
+        .main-content .section .center-content div:hover {
           box-shadow: 0 0 5px 3px #000; }
-    .main-content .main-info iframe {
+        .main-content .section .center-content div p {
+          color: #fff;
+          float: right;
+          font-size: 2.1em;
+          margin: 18px;
+          font-weight: bold;
+          margin-right: 40px;
+          text-shadow: 0 0 20px #000; }
+    .main-content .section iframe {
       width: 600px;
       height: 500px;
       padding-top: 10px;
@@ -64,21 +139,59 @@ body {
   .main-content .side-options {
     width: 250px;
     height: 500px;
-    background-color: #000;
     float: right; }
+    .main-content .side-options .videos {
+      background: -webkit-linear-gradient(#ff9900, #cc6600);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#ff9900, #cc6600);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#ff9900, #cc6600);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#ff9900, #cc6600); }
+    .main-content .side-options .projects {
+      background: -webkit-linear-gradient(#ffcc00, #cc9900);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#ffcc00, #cc9900);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#ffcc00, #cc9900);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#ffcc00, #cc9900); }
+    .main-content .side-options .interests {
+      background: -webkit-linear-gradient(#0033cc, #000066);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#0033cc, #000066);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#0033cc, #000066);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#0033cc, #000066); }
+    .main-content .side-options .contact {
+      background: -webkit-linear-gradient(#0099cc, #006666);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#0099cc, #006666);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#0099cc, #006666);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#0099cc, #006666); }
     .main-content .side-options div {
       width: 80%;
       height: 100px;
-      background-color: #fff;
       margin: 20px auto;
       text-align: center;
-      border-top: 3px solid #999;
-      border-left: 3px solid #999;
-      border-radius: 5px; }
+      border: 3px solid #fff;
+      border-radius: 25px;
+      box-shadow: 5px 5px 20px 0 #000; }
       .main-content .side-options div:hover {
-        box-shadow: 0 0 20px 0 #fff; }
+        box-shadow: 5px -5px 20px 0 #000;
+        -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
+        /* IE 9 */
+        -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
+        /* Safari */
+        transform: matrix(1, 0, 0, 1, 2, 2);
+        /* Standard syntax */ }
       .main-content .side-options div p {
-        font-size: 2em; }
+        font-size: 2em;
+        color: #fff;
+        margin-top: 30px; }
 
 .clear {
   clear: both; }

@@ -14,7 +14,7 @@ body {
   position: absolute;
   padding: 10px;
   border-radius: 85px;
-  border: 2px solid #fff;
+  border: 2px solid #ccc;
   box-shadow: 0 0 30px 10px #000;
   width: 700px;
   height: 150px;
@@ -61,13 +61,21 @@ body {
   margin: 180px auto;
   padding: 20px;
   border-radius: 50px; }
-  .main-content h4 {
-    text-shadow: 0 0 10px #000;
-    text-indent: 30px;
-    font-size: 2em;
-    color: #ddd;
-    padding: 20px; }
+  .main-content .description {
+    box-shadow: 0 0 20px 5px #000;
+    margin: auto;
+    border-radius: 50px 50px 20px 20px;
+    width: 900px;
+    background-color: #fff; }
+    .main-content .description h4 {
+      text-shadow: 0 0 30px #fff;
+      text-indent: 30px;
+      font-size: 1.6em;
+      color: #111;
+      padding: 20px; }
   .main-content .media-container {
+    border-top: 3px solid #001624;
+    border-left: 3px solid #001624;
     box-shadow: 0 0 20px 5px #000;
     border-radius: 20px;
     background-color: #fff;
