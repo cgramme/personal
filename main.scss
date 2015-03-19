@@ -4,6 +4,7 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, p{
 }
 html {
 	font-family:Helvetica, Arial, sans-serif;
+	font-size: 62.5%;
 }
 body {
 	background: url(images/beach.jpg);
@@ -32,170 +33,132 @@ $color-4-d: #006666;
   background: -moz-linear-gradient($startG, $finishG); /* For Firefox 3.6 to 15 */
   background: linear-gradient($startG, $finishG);
 }
+@-webkit-keyframes nameSlide {
+    from {transform: matrix(1,0.5,0,10,-500,0);
+    	color: #fff;
+    	}
+    to {transform: translateX(0px);
+    	color: #fff;
+    	}
+	}
+@-webkit-keyframes buttonHover {
+    from {transform: scale(1,1);}
+    to {transform: scale(1.1,1.1);}
+	}
+
 
 .header {
 	background: url(images/brown_texture.jpg);
 	background-size: 100% 100%;
-	width: 100%;
+	width: 1100px;
 	background-color: #fff;
-	border-bottom: 2px solid #ddd;
-	box-shadow: 0 0 20px 0 #000;
+	border: 2px solid #ddd;
+	box-shadow: 0 0 30px 5px #000;
+	margin: -2px auto 0 auto;
+	border-radius: 0 0 50px 50px;
+
 	img {
-		margin: 10px 10px 0 10px;
+		padding: 10px 0 0 20px;
+		position: relative;
 	}
-	h1 {
-		color: #000;
+	h2 {
+
+		padding: 10px 40px;
+		color: transparent;
+		font-size: 1.8em;
+		-webkit-animation-name: nameSlide;
+    	-webkit-animation-duration: 2s;
+    	-webkit-animation-delay: 1s;
+    	-webkit-animation-fill-mode: forwards;
 	}
 }
+
 .main-content {
-	width: 1000px;
-	margin: 50px auto;
-	padding: 40px;
 	background: url(images/bamboo.jpg);
-	box-shadow: 0 0 20px 2px #000;
+	background-size: 100% 100%;
+	width: 1000px;
+	height: 1000px;
+	margin: 30px auto;
+	padding: 15px;
 	border-radius: 100px;
-	border: 2px solid #fff;
-
-	.projects-tab, .interests-tab, .videos-tab, .contact-tab {
-		position: relative;
-		height: 70px;
-		width: 150px;
-		-ms-transform: translate(50px,100px); /* IE 9 */
-   		-webkit-transform: translate(50px,100px); /* Safari */
-    	transform: translate(20px,-20px);
-    	border-radius: 30px;
-    	border: 3px solid #fff;
-    	text-align: center;
-    	p {
-    		padding-top: 15px;
-    		color: #fff;
-    		font-size: 2em;
-    	}
-	}
-	.projects-tab {
-		@include gradientHue($color-2-m, $color-2-d);
-	}
-	.interests-tab {
-		@include gradientHue($color-1-m, $color-1-d);
-	}
-	.videos-tab {
-		@include gradientHue($color-3-m, $color-3-d);
-	}
-	.contact-tab {
-		@include gradientHue($color-4-m, $color-4-d);
-	}
-	.first {
-		box-shadow: -2px -2px 30px 8px #000;
-		background-color: hsla(0, 0, 100, 0.9);
-		border-radius: 50px;
-	}
-	.second {
-		box-shadow: -2px -2px 30px 8px #000;
-		background-color: hsla(0, 0, 100, 0.9);
-		border-radius: 50px;
-	}
-	.section {
-		position: relative;
-		margin-bottom: 60px;
-		float: left;
-		width: 700px;
-		.profile-pic {
-			height: 250px;
-			width: 250px;
-			float: left;
-			margin: 10px;
-			margin: 10px -20px -30px 10px;
-			border-radius: 80px 50px 50px 50px;
-			border-top: 5px solid #fff;
-			border-left: 5px solid #fff;
-			-ms-transform: translate(-30px,-30px); /* IE 9 */
-   			-webkit-transform: translate(-30px,-30px); /* Safari */
-    		transform: translate(-30px,-30px);
-		}
-		h4 {
-			line-height: 1.4;
-			color: #000;
-			padding: 15px;
-		}
-		.center-content {
-			margin-left: 70px;
+	border: 3px solid #fff;
+	box-shadow: 0 0 30px 5px #000;
+		ul.list-options {
+			background: url(images/board1.png);
+			background-size: 100% 100%;
+			list-style-type: none;
+			padding: 20px;
+			margin-bottom: 40px;
 			text-align: center;
-			.project-links {
-				margin-top: 15px;
-				height: 50px;
-				width: 500px;
-			}
-			div {
-				height: 80px;
-				background: #fff;
-				margin: 30px;
-				border-radius: 20px;
-				box-shadow: 0 0 10px 5px #000;
-				&:hover {
-					box-shadow: 0 0 5px 3px #000;
-				}
-				p {
-					color: #fff;
-					float: right;
-					font-size: 2.1em;
-					margin: 18px;
-					font-weight: bold;
-					margin-right: 40px;
+				li {
 					text-shadow: 0 0 20px #000;
+					padding-top: 20px;
+					text-align: center;
+					border: 3px solid #fff;
+					border-radius: 20px;
+					display: inline-block;
+					width: 15%;
+					margin: 2%;
+					height: 50px;
+					color: #fff;
+					font-size: 2.5em;
+					font-weight: bold;
+					box-shadow: 3px 3px 30px 10px #000;
+					&:hover {
+						-webkit-animation-name: buttonHover;
+    	                -webkit-animation-duration: 0.2s;
+    	                -webkit-animation-fill-mode: forwards;
+						cursor: pointer;
+						box-shadow: 0 0 30px 12px #000;
+					}
+
 				}
-			}
+				.projects {
+							@include gradientHue($color-1-l, $color-1-d);
+						}
+				.videos {
+							@include gradientHue($color-2-l, $color-2-d);
+						}
+				.interests {
+							@include gradientHue($color-3-l, $color-3-d);
+						}
+				.contact {
+							@include gradientHue($color-4-l, $color-4-d);
+						}						
+		}
+	.current-content {
+		padding: 50px;
+			.wrap {
+				border: 1px solid #fff;
+				background-color: #fff;
+				padding: 30px;
+				border-radius: 70px;
+				box-shadow: 0 0 40px 10px #000;
 
-		}
-		iframe {
-			width: 600px;
-			height: 500px;
-			padding-top: 10px;
-			padding-bottom: 20px;
-		}
-	}
-	.side-options {
-		width: 250px;
-		height: 500px;
-		float: right;
-		.videos {
-			@include gradientHue($color-1-m, $color-1-d);
-		}
-		.projects {
-			@include gradientHue($color-2-m, $color-2-d);
-		}
-		.interests {
-			@include gradientHue($color-3-m, $color-3-d);
-		}
-		.contact {
-			@include gradientHue($color-4-m, $color-4-d);
-		}
-		div {
-			width: 80%;
-			height: 100px;
-			margin: 20px auto;
-			text-align: center;
-			border: 3px solid #fff;
-			border-radius: 25px;
-			box-shadow: 5px 5px 20px 0 #000; 
-			&:hover {
-				box-shadow: 5px -5px 20px 0 #000;
-				-ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
-    			-webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); /* Safari */
-   				 transform: matrix(1, 0, 0, 1, 2, 2); /* Standard syntax */
-    		}
-			p {
-				font-size: 2em;
-				color: #fff;
-				margin-top: 30px;
-			}
-		}
+					.profile-img {
+						box-shadow: -10px -10px 30px 0px #000;
+						-ms-transform: translate(-40px, -40px);
+  						-webkit-transform: translate(-40px, -40px);
+  						transform: translate(-60px, -60px);
+  						margin: 10px -50px -50px 10px;
+						float: left;
+						display: inline-block;
+						width: 250px;
+						height: 250px;
+						border-radius: 50px;
+						border: 5px solid #fff;
+					}
+					h3 {
+						text-indent: 3em;
+						color: #111;
+						font-size: 1.7em;
+					}
 
+			}
 	}
 }
+
 
 .clear {
 	clear: both;
-}
-.indent-text {
-	text-indent: 30px;
 }

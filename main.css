@@ -3,200 +3,141 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, p {
   padding: 0; }
 
 html {
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 62.5%; }
 
 body {
   background: url(images/beach.jpg);
   background-size: cover; }
 
+@-webkit-keyframes nameSlide {
+  from {
+    transform: matrix(1, 0.5, 0, 10, -500, 0);
+    color: #fff; }
+  to {
+    transform: translateX(0px);
+    color: #fff; } }
+@-webkit-keyframes buttonHover {
+  from {
+    transform: scale(1, 1); }
+  to {
+    transform: scale(1.1, 1.1); } }
 .header {
   background: url(images/brown_texture.jpg);
   background-size: 100% 100%;
-  width: 100%;
+  width: 1100px;
   background-color: #fff;
-  border-bottom: 2px solid #ddd;
-  box-shadow: 0 0 20px 0 #000; }
+  border: 2px solid #ddd;
+  box-shadow: 0 0 30px 5px #000;
+  margin: -2px auto 0 auto;
+  border-radius: 0 0 50px 50px; }
   .header img {
-    margin: 10px 10px 0 10px; }
-  .header h1 {
-    color: #000; }
+    padding: 10px 0 0 20px;
+    position: relative; }
+  .header h2 {
+    padding: 10px 40px;
+    color: transparent;
+    font-size: 1.8em;
+    -webkit-animation-name: nameSlide;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards; }
 
 .main-content {
-  width: 1000px;
-  margin: 50px auto;
-  padding: 40px;
   background: url(images/bamboo.jpg);
-  box-shadow: 0 0 20px 2px #000;
+  background-size: 100% 100%;
+  width: 1000px;
+  height: 1000px;
+  margin: 30px auto;
+  padding: 15px;
   border-radius: 100px;
-  border: 2px solid #fff; }
-  .main-content .projects-tab, .main-content .interests-tab, .main-content .videos-tab, .main-content .contact-tab {
-    position: relative;
-    height: 70px;
-    width: 150px;
-    -ms-transform: translate(50px, 100px);
-    /* IE 9 */
-    -webkit-transform: translate(50px, 100px);
-    /* Safari */
-    transform: translate(20px, -20px);
-    border-radius: 30px;
-    border: 3px solid #fff;
+  border: 3px solid #fff;
+  box-shadow: 0 0 30px 5px #000; }
+  .main-content ul.list-options {
+    background: url(images/board1.png);
+    background-size: 100% 100%;
+    list-style-type: none;
+    padding: 20px;
+    margin-bottom: 40px;
     text-align: center; }
-    .main-content .projects-tab p, .main-content .interests-tab p, .main-content .videos-tab p, .main-content .contact-tab p {
-      padding-top: 15px;
-      color: #fff;
-      font-size: 2em; }
-  .main-content .projects-tab {
-    background: -webkit-linear-gradient(#ffcc00, #cc9900);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#ffcc00, #cc9900);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#ffcc00, #cc9900);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#ffcc00, #cc9900); }
-  .main-content .interests-tab {
-    background: -webkit-linear-gradient(#ff9900, #cc6600);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#ff9900, #cc6600);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#ff9900, #cc6600);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#ff9900, #cc6600); }
-  .main-content .videos-tab {
-    background: -webkit-linear-gradient(#0033cc, #000066);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#0033cc, #000066);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#0033cc, #000066);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#0033cc, #000066); }
-  .main-content .contact-tab {
-    background: -webkit-linear-gradient(#0099cc, #006666);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#0099cc, #006666);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#0099cc, #006666);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#0099cc, #006666); }
-  .main-content .first {
-    box-shadow: -2px -2px 30px 8px #000;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 50px; }
-  .main-content .second {
-    box-shadow: -2px -2px 30px 8px #000;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 50px; }
-  .main-content .section {
-    position: relative;
-    margin-bottom: 60px;
-    float: left;
-    width: 700px; }
-    .main-content .section .profile-pic {
-      height: 250px;
-      width: 250px;
-      float: left;
-      margin: 10px;
-      margin: 10px -20px -30px 10px;
-      border-radius: 80px 50px 50px 50px;
-      border-top: 5px solid #fff;
-      border-left: 5px solid #fff;
-      -ms-transform: translate(-30px, -30px);
-      /* IE 9 */
-      -webkit-transform: translate(-30px, -30px);
-      /* Safari */
-      transform: translate(-30px, -30px); }
-    .main-content .section h4 {
-      line-height: 1.4;
-      color: #000;
-      padding: 15px; }
-    .main-content .section .center-content {
-      margin-left: 70px;
-      text-align: center; }
-      .main-content .section .center-content .project-links {
-        margin-top: 15px;
-        height: 50px;
-        width: 500px; }
-      .main-content .section .center-content div {
-        height: 80px;
-        background: #fff;
-        margin: 30px;
-        border-radius: 20px;
-        box-shadow: 0 0 10px 5px #000; }
-        .main-content .section .center-content div:hover {
-          box-shadow: 0 0 5px 3px #000; }
-        .main-content .section .center-content div p {
-          color: #fff;
-          float: right;
-          font-size: 2.1em;
-          margin: 18px;
-          font-weight: bold;
-          margin-right: 40px;
-          text-shadow: 0 0 20px #000; }
-    .main-content .section iframe {
-      width: 600px;
-      height: 500px;
-      padding-top: 10px;
-      padding-bottom: 20px; }
-  .main-content .side-options {
-    width: 250px;
-    height: 500px;
-    float: right; }
-    .main-content .side-options .videos {
-      background: -webkit-linear-gradient(#ff9900, #cc6600);
-      /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#ff9900, #cc6600);
-      /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#ff9900, #cc6600);
-      /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#ff9900, #cc6600); }
-    .main-content .side-options .projects {
-      background: -webkit-linear-gradient(#ffcc00, #cc9900);
-      /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#ffcc00, #cc9900);
-      /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#ffcc00, #cc9900);
-      /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#ffcc00, #cc9900); }
-    .main-content .side-options .interests {
-      background: -webkit-linear-gradient(#0033cc, #000066);
-      /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#0033cc, #000066);
-      /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#0033cc, #000066);
-      /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#0033cc, #000066); }
-    .main-content .side-options .contact {
-      background: -webkit-linear-gradient(#0099cc, #006666);
-      /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#0099cc, #006666);
-      /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#0099cc, #006666);
-      /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#0099cc, #006666); }
-    .main-content .side-options div {
-      width: 80%;
-      height: 100px;
-      margin: 20px auto;
+    .main-content ul.list-options li {
+      text-shadow: 0 0 20px #000;
+      padding-top: 20px;
       text-align: center;
       border: 3px solid #fff;
-      border-radius: 25px;
-      box-shadow: 5px 5px 20px 0 #000; }
-      .main-content .side-options div:hover {
-        box-shadow: 5px -5px 20px 0 #000;
-        -ms-transform: matrix(1, -0.3, 0, 1, 0, 0);
-        /* IE 9 */
-        -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0);
-        /* Safari */
-        transform: matrix(1, 0, 0, 1, 2, 2);
-        /* Standard syntax */ }
-      .main-content .side-options div p {
-        font-size: 2em;
-        color: #fff;
-        margin-top: 30px; }
+      border-radius: 20px;
+      display: inline-block;
+      width: 15%;
+      margin: 2%;
+      height: 50px;
+      color: #fff;
+      font-size: 2.5em;
+      font-weight: bold;
+      box-shadow: 3px 3px 30px 10px #000; }
+      .main-content ul.list-options li:hover {
+        -webkit-animation-name: buttonHover;
+        -webkit-animation-duration: 0.2s;
+        -webkit-animation-fill-mode: forwards;
+        cursor: pointer;
+        box-shadow: 0 0 30px 12px #000; }
+    .main-content ul.list-options .projects {
+      background: -webkit-linear-gradient(#ff6600, #cc6600);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#ff6600, #cc6600);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#ff6600, #cc6600);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#ff6600, #cc6600); }
+    .main-content ul.list-options .videos {
+      background: -webkit-linear-gradient(#ff9900, #cc9900);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#ff9900, #cc9900);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#ff9900, #cc9900);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#ff9900, #cc9900); }
+    .main-content ul.list-options .interests {
+      background: -webkit-linear-gradient(#3366ff, #000066);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#3366ff, #000066);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#3366ff, #000066);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#3366ff, #000066); }
+    .main-content ul.list-options .contact {
+      background: -webkit-linear-gradient(#00ccff, #006666);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#00ccff, #006666);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#00ccff, #006666);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#00ccff, #006666); }
+  .main-content .current-content {
+    padding: 50px; }
+    .main-content .current-content .wrap {
+      border: 1px solid #fff;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 70px;
+      box-shadow: 0 0 40px 10px #000; }
+      .main-content .current-content .wrap .profile-img {
+        box-shadow: -10px -10px 30px 0px #000;
+        -ms-transform: translate(-40px, -40px);
+        -webkit-transform: translate(-40px, -40px);
+        transform: translate(-60px, -60px);
+        margin: 10px -50px -50px 10px;
+        float: left;
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        border-radius: 50px;
+        border: 5px solid #fff; }
+      .main-content .current-content .wrap h3 {
+        text-indent: 3em;
+        color: #111;
+        font-size: 1.7em; }
 
 .clear {
   clear: both; }
-
-.indent-text {
-  text-indent: 30px; }
 
 /*# sourceMappingURL=main.css.map */
