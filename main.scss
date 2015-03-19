@@ -55,6 +55,8 @@ $color-4-d: #006666;
 	color: #fff;
 	width: 200px;
 	height: 70px;
+	text-shadow: 0 0 10px #000;
+	margin-bottom: -50px;
 }
 @-webkit-keyframes nameSlide {
     from {transform: matrix(1,0.5,0,10,-500,0);
@@ -162,13 +164,13 @@ $color-4-d: #006666;
 				h2 {
 					font-weight: bold;
 					margin-bottom: 20px;
-					font-size: 1.9em;
+					font-size: 1.8em;
 					line-height: 30px;
 				}
 
 				h3 {
 						color: #111;
-						font-size: 1.7em;
+						font-size: 1.7em; 
 					}
 				//everything below this point are changes made for specific ajax requests and thier content
 
@@ -226,7 +228,33 @@ $color-4-d: #006666;
 						width: 90%;
 						height: 100%;
 					}
+
+
 				}
+
+				//"VIDEOS" content below
+
+				div.videos-label {
+					@include sectionLabel();
+					@include gradientHue($color2-1-lm, $color2-1-m);
+				}
+				.video-container {
+					display: inline-block;
+					width: 350px;
+					height: 350px;
+					background-color: #222;
+					text-align: center;
+					padding:5px;
+					border-radius: 10px;
+					margin: 5px;
+					iframe {
+						margin-top: 5px;
+						width: 320px;
+						height: 320px;
+					}
+				}
+
+
 					
 
 			}
@@ -242,3 +270,4 @@ $color-4-d: #006666;
 .indent {
 	text-indent: 3em;
 }
+

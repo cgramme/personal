@@ -3,7 +3,9 @@
 
 $(document).ready(function(){
 
-	function loadXMLDoc(){
+	
+
+	function loadXMLDoc(url){
 		var xmlhttp;
 		if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
  			 xmlhttp=new XMLHttpRequest();
@@ -15,11 +17,14 @@ $(document).ready(function(){
     				document.getElementById("change-content").innerHTML=xmlhttp.responseText;
    			 }
   		}
-		xmlhttp.open("GET","projects.txt",true);
+		xmlhttp.open("GET",url,true);
 		xmlhttp.send();
 	}
 
 	$('.projects').click(function() {
-  	loadXMLDoc();
-});
+  	loadXMLDoc("projects.txt");
+	});
+	$('.videos').click(function() {
+  	loadXMLDoc("videos.txt");
+	});
 });
