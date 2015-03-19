@@ -33,6 +33,18 @@ $color-4-d: #006666;
   background: -moz-linear-gradient($startG, $finishG); /* For Firefox 3.6 to 15 */
   background: linear-gradient($startG, $finishG);
 }
+@mixin sectionLabel (){
+	transform: translateY(-70px);
+	font-size: 3em;
+	border-radius: 50px;
+	font-weight: bold;
+	padding-top: 30px;
+	border: 4px solid #fff;
+	text-align: center;
+	color: #fff;
+	width: 200px;
+	height: 70px;
+}
 @-webkit-keyframes nameSlide {
     from {transform: matrix(1,0.5,0,10,-500,0);
     	color: #fff;
@@ -128,12 +140,22 @@ $color-4-d: #006666;
 		}
 	.current-content {
 		padding: 50px;
+
+		//The class of "wrap" will be the container for all ajax content requests
 			.wrap {
 				border: 1px solid #fff;
 				background-color: #fff;
 				padding: 30px;
 				border-radius: 70px;
 				box-shadow: 0 0 40px 10px #000;
+
+				h3 {
+						color: #111;
+						font-size: 1.7em;
+					}
+				//everything below this point are changes made for specific ajax requests and thier content
+
+				//this scss/css is dedicated for the "MAIN" content
 
 					.profile-img {
 						box-shadow: -10px -10px 30px 0px #000;
@@ -148,17 +170,58 @@ $color-4-d: #006666;
 						border-radius: 50px;
 						border: 5px solid #fff;
 					}
-					h3 {
-						text-indent: 3em;
-						color: #111;
-						font-size: 1.7em;
+				//this scss/css is dedicated for the "PROJECTS" content
+
+				div.projects-label {
+					@include sectionLabel();
+					@include gradientHue($color-1-l, $color-1-d);
+				}
+				.wrapper {
+					background: url(images/wood.jpg);
+					background-size: 100% 100%;
+					padding: 20px;
+					margin: 20px;
+					border-radius: 30px;
+					box-shadow: 0 0 20px 0 #000;
+						h3 {
+							color: #fff;
+							text-shadow: 0 0 10px #000;
+						}
+				}
+				.project-links {
+					height: 70px;
+					width: 70%;
+					background: url(images/dark_texture.jpg);
+					background-size: 100% 100%;
+					margin: 10px 10px 10px 0;
+					border-radius: 20px;
+					box-shadow: 0 0 20px 0 #000;
+					text-align: center;
+					padding: 5px;
+					&:hover {
+						-webkit-animation-name: buttonHover;
+    	                -webkit-animation-duration: 0.2s;
+    	                -webkit-animation-fill-mode: forwards;
+						cursor: pointer;
+						box-shadow: 0 0 20px 0 #000;
 					}
+					img {
+						width: 90%;
+						height: 100%;
+					}
+				}
+					
 
 			}
+				
+				
 	}
 }
 
 
 .clear {
 	clear: both;
+}
+.indent {
+	text-indent: 3em;
 }
