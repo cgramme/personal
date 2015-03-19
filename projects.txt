@@ -3,7 +3,7 @@
 					<h3 class="indent">These are a few projects I've completed on my own time. They are a mixture of responsive websites, games, and Android applications.</h3>
 					<div class="wrapper">
 						<h3>Here is a responsive website I created for fun. I might have an obsession with space.</h3>
-						<div class="project-links" onclick="window.open('http://cgramme.github.io/dreamsitereality/business.html')"><img src="images/intergalacticLOGO.png"></div>
+						<div class="project-links" onclick="window.open('http://cgramme.github.io/dreamsitereality/business.html')"><img src="images/intergalactic.png"></div>
 					</div>
 					<div class="wrapper">
 						<h3>This Android App is the very first program I created. It's the way I learned to code, by doing.</h3>
