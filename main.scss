@@ -7,8 +7,8 @@ html {
 	font-size: 62.5%;
 }
 body {
-	background: url(images/beach.jpg);
-	background-size: cover;
+	background: url(images/water1.jpg) no-repeat fixed;
+	background-size: 100% 100%;
 }
 
 $color-1-m: #ff9900;
@@ -65,7 +65,7 @@ $color-4-d: #006666;
 	width: 1100px;
 	background-color: #fff;
 	border: 2px solid #ddd;
-	box-shadow: 0 0 30px 5px #000;
+	box-shadow: 0 0 50px 10px #000;
 	margin: -2px auto 0 auto;
 	border-radius: 0 0 50px 50px;
 
@@ -89,12 +89,11 @@ $color-4-d: #006666;
 	background: url(images/bamboo.jpg);
 	background-size: 100% 100%;
 	width: 1000px;
-	height: 1000px;
 	margin: 30px auto;
 	padding: 15px;
 	border-radius: 100px;
 	border: 3px solid #fff;
-	box-shadow: 0 0 30px 5px #000;
+	box-shadow: 0 0 50px 10px #000;
 		ul.list-options {
 			background: url(images/board1.png);
 			background-size: 100% 100%;
@@ -148,6 +147,13 @@ $color-4-d: #006666;
 				padding: 30px;
 				border-radius: 70px;
 				box-shadow: 0 0 40px 10px #000;
+
+				h2 {
+					font-weight: bold;
+					margin-bottom: 20px;
+					font-size: 1.9em;
+					line-height: 30px;
+				}
 
 				h3 {
 						color: #111;
