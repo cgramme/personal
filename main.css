@@ -80,37 +80,37 @@ body {
         cursor: pointer;
         box-shadow: 0 0 30px 12px #000; }
     .main-content ul.list-options .projects {
-      background: -webkit-linear-gradient(#ff6600, #cc6600);
+      background: -webkit-linear-gradient(#0399fb, #0070b9);
       /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#ff6600, #cc6600);
+      background: -o-linear-gradient(#0399fb, #0070b9);
       /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#ff6600, #cc6600);
+      background: -moz-linear-gradient(#0399fb, #0070b9);
       /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#ff6600, #cc6600); }
+      background: linear-gradient(#0399fb, #0070b9); }
     .main-content ul.list-options .videos {
-      background: -webkit-linear-gradient(#ff9900, #cc9900);
+      background: -webkit-linear-gradient(#0070b9, #00568e);
       /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#ff9900, #cc9900);
+      background: -o-linear-gradient(#0070b9, #00568e);
       /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#ff9900, #cc9900);
+      background: -moz-linear-gradient(#0070b9, #00568e);
       /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#ff9900, #cc9900); }
+      background: linear-gradient(#0070b9, #00568e); }
     .main-content ul.list-options .interests {
-      background: -webkit-linear-gradient(#3366ff, #000066);
+      background: -webkit-linear-gradient(#00568e, #004572);
       /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#3366ff, #000066);
+      background: -o-linear-gradient(#00568e, #004572);
       /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#3366ff, #000066);
+      background: -moz-linear-gradient(#00568e, #004572);
       /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#3366ff, #000066); }
+      background: linear-gradient(#00568e, #004572); }
     .main-content ul.list-options .contact {
-      background: -webkit-linear-gradient(#00ccff, #006666);
+      background: -webkit-linear-gradient(#004572, #000d15);
       /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#00ccff, #006666);
+      background: -o-linear-gradient(#004572, #000d15);
       /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#00ccff, #006666);
+      background: -moz-linear-gradient(#004572, #000d15);
       /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#00ccff, #006666); }
+      background: linear-gradient(#004572, #000d15); }
   .main-content .current-content {
     padding: 50px; }
     .main-content .current-content .wrap {
@@ -150,13 +150,13 @@ body {
         color: #fff;
         width: 200px;
         height: 70px;
-        background: -webkit-linear-gradient(#ff6600, #cc6600);
+        background: -webkit-linear-gradient(#0399fb, #0070b9);
         /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#ff6600, #cc6600);
+        background: -o-linear-gradient(#0399fb, #0070b9);
         /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#ff6600, #cc6600);
+        background: -moz-linear-gradient(#0399fb, #0070b9);
         /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#ff6600, #cc6600); }
+        background: linear-gradient(#0399fb, #0070b9); }
       .main-content .current-content .wrap .wrapper {
         background: url(images/wood.jpg);
         background-size: 100% 100%;

@@ -11,6 +11,17 @@ body {
 	background-size: 100% 100%;
 }
 
+//new colors
+
+$color2-1-l: #0399fb;
+$color2-1-lm: #0070b9;
+$color2-1-m: #00568e;
+$color2-1-md: #004572;
+$color2-1-d: #000d15;
+
+
+//old colors
+
 $color-1-m: #ff9900;
 $color-1-l: #ff6600;
 $color-1-d: #cc6600;
@@ -125,16 +136,16 @@ $color-4-d: #006666;
 
 				}
 				.projects {
-							@include gradientHue($color-1-l, $color-1-d);
+							@include gradientHue($color2-1-l, $color2-1-lm);
 						}
 				.videos {
-							@include gradientHue($color-2-l, $color-2-d);
+							@include gradientHue($color2-1-lm, $color2-1-m);
 						}
 				.interests {
-							@include gradientHue($color-3-l, $color-3-d);
+							@include gradientHue($color2-1-m, $color2-1-md);
 						}
 				.contact {
-							@include gradientHue($color-4-l, $color-4-d);
+							@include gradientHue($color2-1-md, $color2-1-d);
 						}						
 		}
 	.current-content {
@@ -180,7 +191,7 @@ $color-4-d: #006666;
 
 				div.projects-label {
 					@include sectionLabel();
-					@include gradientHue($color-1-l, $color-1-d);
+					@include gradientHue($color2-1-l, $color2-1-lm);
 				}
 				.wrapper {
 					background: url(images/wood.jpg);
