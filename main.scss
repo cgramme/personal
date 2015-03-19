@@ -22,6 +22,7 @@ $color2-1-d: #000d15;
 
 //old colors
 
+
 $color-1-m: #ff9900;
 $color-1-l: #ff6600;
 $color-1-d: #cc6600;
@@ -233,25 +234,74 @@ $color-4-d: #006666;
 				}
 
 				//"VIDEOS" content below
-
-				div.videos-label {
-					@include sectionLabel();
-					@include gradientHue($color2-1-lm, $color2-1-m);
-				}
-				.video-container {
-					display: inline-block;
-					width: 350px;
-					height: 350px;
-					background-color: #222;
-					text-align: center;
-					padding:5px;
-					border-radius: 10px;
-					margin: 5px;
-					iframe {
-						margin-top: 5px;
-						width: 320px;
-						height: 320px;
+				.video-content {
+					div.videos-label {
+						@include sectionLabel();
+						@include gradientHue($color2-1-lm, $color2-1-m);
 					}
+					p {
+						color: #fff;
+						font-size: 2em;
+						text-align: center;
+						text-shadow: 2px 2px 5px #000;
+					}
+
+					.video-container {
+						display: inline-block;
+						width: 350px;
+						background-color: #222;
+						text-align: center;
+						padding:5px;
+						border-radius: 10px;
+						margin: 20px 5px 5px 5px;
+						box-shadow: 0 0 10px 2px #000;
+						iframe {
+							margin-top: 5px;
+							width: 340px;
+							height: 320px;
+						}
+					}
+
+				}
+
+				//"CONTACT" content below
+
+				.contact-content {
+					div.contact-label {
+						@include sectionLabel();
+						@include gradientHue($color2-1-md, $color2-1-d);
+					}
+					.contact-wrap {
+						background: url(images/wood.jpg);
+						background-size: 100% 100%;
+						margin-bottom: 20px;
+						padding: 10px;
+						border-radius: 60px;
+						box-shadow: 0 0 20px 5px #000;
+						&:hover {
+							cursor: pointer;
+						}
+						&:hover img {
+							-webkit-animation-name: buttonHover;
+    	                	-webkit-animation-duration: 0.2s;
+    	                	-webkit-animation-fill-mode: forwards;
+							
+						}
+						img {
+							display: inline-block;
+							height: 100px;
+							width: 100px;
+							float: left;
+						}
+						h3 {
+							display: inline-block;
+							font-size: 2.2em;
+							margin: 40px 0 0 20px;
+							color: #fff;
+							text-shadow: 2px 2px 5px #000;
+						}
+					}
+
 				}
 
 
@@ -269,5 +319,8 @@ $color-4-d: #006666;
 }
 .indent {
 	text-indent: 3em;
+}
+.center-text {
+	text-align: center;
 }
 

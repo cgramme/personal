@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 	
 
-	function loadXMLDoc(url){
+	function loadXMLDoc(url, elementId){
 		var xmlhttp;
 		if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
  			 xmlhttp=new XMLHttpRequest();
@@ -14,7 +14,7 @@ $(document).ready(function(){
  		}
 		xmlhttp.onreadystatechange=function(){
   			if (xmlhttp.readyState==4 && xmlhttp.status==200){
-    				document.getElementById("change-content").innerHTML=xmlhttp.responseText;
+    				document.getElementById(elementId).innerHTML=xmlhttp.responseText;
    			 }
   		}
 		xmlhttp.open("GET",url,true);
@@ -22,9 +22,15 @@ $(document).ready(function(){
 	}
 
 	$('.projects').click(function() {
-  	loadXMLDoc("projects.txt");
+  	loadXMLDoc("projects.txt","change-content");
 	});
 	$('.videos').click(function() {
-  	loadXMLDoc("videos.txt");
+  	loadXMLDoc("videos.txt","change-content");
 	});
+	$('.contact').click(function() {
+  	loadXMLDoc("contact.txt","change-content");
+	});
+
+	
 });
+
