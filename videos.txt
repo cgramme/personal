@@ -15,7 +15,7 @@
 							</div>
 						</div>
 						<div class="wrapper">
-							<p>Video tutorials I came across on my programming journey.</p>
+							<p>Helpful tutorials I came across on my programming journey.</p>
 							<div class="video-container">
 								<h3>The New Boston Android tutorials</h3>
 								<iframe src="https://www.youtube.com/embed/SUOWNXGRc6g?list=PL2F07DBCDCC01493A"
