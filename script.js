@@ -34,6 +34,11 @@ $(document).ready(function(){
   	loadXMLDoc("interests.txt","change-content");
 	});
 
+
+	$('.profile-img').click(function() {
+  	alert($('body').width());
+	});
+
 	
 });
 

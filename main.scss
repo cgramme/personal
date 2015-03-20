@@ -79,17 +79,27 @@ $color-4-d: #006666;
 	background-size: 100% 100%;
 	width: 1100px;
 	background-color: #fff;
-	border: 2px solid #ddd;
-	box-shadow: 0 0 50px 10px #000;
+	border: 1px solid #000;
+	box-shadow: 0 0 50px 10px #000, 0 0 20px 0 #000;;
 	margin: -2px auto 0 auto;
-	border-radius: 0 0 50px 50px;
+	border-radius: 0 0 60px 60px;
+	@media screen and (max-width: 1150px) {
+    	width: 95%;
+  	}
+  	@media screen and (max-width: 590px) {
+    		border-radius: 0;
+    		width: 100%;
+  		}
 
 	img {
 		padding: 10px 0 0 20px;
 		position: relative;
+		@media screen and (max-width: 590px) {
+    		width: 95%;
+    		padding: 10px 0 0 0;
+  		}
 	}
 	h2 {
-
 		padding: 10px 40px;
 		color: transparent;
 		font-size: 1.8em;
@@ -97,6 +107,10 @@ $color-4-d: #006666;
     	-webkit-animation-duration: 2s;
     	-webkit-animation-delay: 1s;
     	-webkit-animation-fill-mode: forwards;
+    	@media screen and (max-width: 590px) {
+    		font-size: 1.3em;
+    		padding: 5px 10px;
+  		}
 	}
 }
 
@@ -107,8 +121,18 @@ $color-4-d: #006666;
 	margin: 30px auto;
 	padding: 15px;
 	border-radius: 100px;
-	border: 3px solid #fff;
-	box-shadow: 0 0 50px 10px #000;
+	border: 0px solid #fff;
+	box-shadow: 0 0 50px 10px #000, inset 0 0 10px 2px #000;
+	@media screen and (max-width: 1100px) {
+    	width: 95%;
+    	padding: 15px 0 10px 0;
+  	}
+  	@media screen and (max-width: 590px) {
+    	width: 100%;
+    	border-radius: 0;
+    	padding: 0 0 10px 0;
+  	}
+
 		ul.list-options {
 			background: url(images/board1.png);
 			background-size: 100% 100%;
@@ -116,6 +140,14 @@ $color-4-d: #006666;
 			padding: 20px;
 			margin-bottom: 40px;
 			text-align: center;
+			@media screen and (max-width: 1100px) {
+    			
+  			}
+			@media screen and (max-width: 600px) {
+    			padding: 10px 0;
+    			margin-bottom: 10px;
+    			background: none;
+  			}
 				li {
 					text-shadow: 0 0 20px #000;
 					padding-top: 20px;
@@ -130,6 +162,19 @@ $color-4-d: #006666;
 					font-size: 2.5em;
 					font-weight: bold;
 					box-shadow: 3px 3px 30px 10px #000;
+					@media screen and (max-width: 880px) {
+    					font-size: 1.8em;
+    					height: 30px;
+    					padding-top: 10px;
+  					}
+					@media screen and (max-width: 640px) {
+    					font-size: 1.5em;
+    					margin: 0;
+    					width: 22%;
+    					height: 30px;
+    					border: 1px solid #fff;
+						border-radius: 5px;
+  					}
 					&:hover {
 						-webkit-animation-name: buttonHover;
     	                -webkit-animation-duration: 0.2s;
@@ -154,25 +199,40 @@ $color-4-d: #006666;
 		}
 	.current-content {
 		padding: 50px;
+		@media screen and (max-width: 1100px) {
+    						padding: 0 10px;
+  						}
 
 		//The class of "wrap" will be the container for all ajax content requests
 			.wrap {
-				border: 1px solid #fff;
-				background-color: #fff;
-				padding: 30px;
-				border-radius: 70px;
-				box-shadow: 0 0 40px 10px #000;
-
+					border: 1px solid #000;
+					background-color: #fff;
+					padding: 30px;
+					border-radius: 70px;
+					box-shadow: 0 0 40px 10px #000, inset 0 0 5px 0 #000;
+					@media screen and (max-width: 600px) {
+    						padding: 10px;
+    						border-radius: 20px;
+  						}
+					
 				h2 {
 					margin-bottom: 20px;
 					font-size: 1.7em;
 					line-height: 30px;
+					@media screen and (max-width: 600px) {
+    						font-size: 1.5em;
+							line-height: 25px;
+  						}
 				}
 
 				h3 {
 						font-weight: bold;
 						color: #111;
 						font-size: 1.7em; 
+						@media screen and (max-width: 600px) {
+    						font-size: 1.5em;
+							line-height: 20px;
+  						}
 					}
 				//everything below this point are changes made for specific ajax requests and thier content
 
@@ -189,7 +249,11 @@ $color-4-d: #006666;
 						width: 250px;
 						height: 250px;
 						border-radius: 50px;
-						border: 5px solid #fff;
+						border-top: 5px solid #fff;
+						border-left: 5px solid #fff;
+						@media screen and (max-width: 860px) {
+    						display: none;
+  						}
 					}
 				//this scss/css is dedicated for the "PROJECTS" content
 
