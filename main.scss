@@ -392,6 +392,7 @@ $color-4-d: #006666;
 						background: url(images/wood.jpg);
 						background-size: 100% 100%;
 						margin-bottom: 20px;
+						margin-top: 10px;
 						padding: 10px;
 						border-radius: 60px;
 						box-shadow: 0 0 20px 5px #000;
@@ -409,6 +410,14 @@ $color-4-d: #006666;
 							height: 100px;
 							width: 100px;
 							float: left;
+							@media screen and (max-width: 600px) {
+    							height: 50px;
+    							width: 50px;
+  							}
+  							@media screen and (max-width: 400px) {
+    							height: 25px;
+    							width: 25px;
+  							}
 						}
 						h3 {
 							display: inline-block;
@@ -416,6 +425,16 @@ $color-4-d: #006666;
 							margin: 40px 0 0 20px;
 							color: #fff;
 							text-shadow: 2px 2px 5px #000;
+							@media screen and (max-width: 600px) {
+								display: block;
+								text-align: center;
+    							margin: 20px 0 0 0;
+    							font-size: 1.7em;
+  							}
+  							@media screen and (max-width: 400px) {
+    							margin: 5px 0 0 0;
+    							font-size: 1.5em;
+  							}
 						}
 					}
 
@@ -429,16 +448,19 @@ $color-4-d: #006666;
 						@include sectionLabel();
 						@include gradientHue($color2-1-m, $color2-1-md);
 					}
-					img.computer {
+					img {
 						height: 100px;
 						width:200px;
 						display: inline-block;
+						@media screen and (max-width: 600px) {
+    						height: 50px;
+    						width: 100px;
+  						}
+					}
+					img.computer {
 						float: right;
 					}
 					img.mountain {
-						height: 100px;
-						width:200px;
-						display: inline-block;
 						float: left;
 					}
 				}
