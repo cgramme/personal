@@ -30,6 +30,9 @@ $(document).ready(function(){
 	$('.contact').click(function() {
   	loadXMLDoc("contact.txt","change-content");
 	});
+	$('.interests').click(function() {
+  	loadXMLDoc("interests.txt","change-content");
+	});
 
 	
 });

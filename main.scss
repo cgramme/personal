@@ -1,6 +1,7 @@
 html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, p{
 	margin: 0;
 	padding: 0;
+	font-weight: normal;
 }
 html {
 	font-family:Helvetica, Arial, sans-serif;
@@ -163,13 +164,13 @@ $color-4-d: #006666;
 				box-shadow: 0 0 40px 10px #000;
 
 				h2 {
-					font-weight: bold;
 					margin-bottom: 20px;
-					font-size: 1.8em;
+					font-size: 1.7em;
 					line-height: 30px;
 				}
 
 				h3 {
+						font-weight: bold;
 						color: #111;
 						font-size: 1.7em; 
 					}
@@ -302,6 +303,28 @@ $color-4-d: #006666;
 						}
 					}
 
+				}
+
+				//"INTERESTS" content below
+
+				.interests-content {
+					padding: 10px;
+					div.interests-label {
+						@include sectionLabel();
+						@include gradientHue($color2-1-m, $color2-1-md);
+					}
+					img.computer {
+						height: 100px;
+						width:200px;
+						display: inline-block;
+						float: right;
+					}
+					img.mountain {
+						height: 100px;
+						width:200px;
+						display: inline-block;
+						float: left;
+					}
 				}
 
 
