@@ -220,6 +220,24 @@ body {
         background: -moz-linear-gradient(#0399fb, #0070b9);
         /* For Firefox 3.6 to 15 */
         background: linear-gradient(#0399fb, #0070b9); }
+        @media screen and (max-width: 900px) {
+          .main-content .current-content .wrap div.projects-label {
+            width: 150px;
+            height: 40px;
+            transform: translateY(-30px);
+            font-size: 2em;
+            border-radius: 40px;
+            margin-bottom: 0px;
+            padding-top: 15px; } }
+        @media screen and (max-width: 600px) {
+          .main-content .current-content .wrap div.projects-label {
+            width: 100px;
+            height: 30px;
+            transform: translateY(0px);
+            font-size: 2em;
+            border-radius: 20px;
+            margin-bottom: 0px;
+            padding-top: 10px; } }
       .main-content .current-content .wrap .wrapper {
         background: url(images/wood.jpg);
         background-size: 100% 100%;
@@ -227,12 +245,15 @@ body {
         margin: 20px;
         border-radius: 30px;
         box-shadow: 0 0 20px 0 #000; }
+        @media screen and (max-width: 900px) {
+          .main-content .current-content .wrap .wrapper {
+            margin: 5px; } }
         .main-content .current-content .wrap .wrapper h3 {
           color: #fff;
           text-shadow: 0 0 10px #000; }
       .main-content .current-content .wrap .project-links {
         height: 70px;
-        width: 70%;
+        width: 500px;
         background: url(images/dark_texture.jpg);
         background-size: 100% 100%;
         margin: 10px 10px 10px 0;
@@ -240,6 +261,18 @@ body {
         box-shadow: 0 0 20px 0 #000;
         text-align: center;
         padding: 5px; }
+        @media screen and (max-width: 700px) {
+          .main-content .current-content .wrap .project-links {
+            width: 400px;
+            height: 50px; } }
+        @media screen and (max-width: 530px) {
+          .main-content .current-content .wrap .project-links {
+            width: 300px;
+            height: 40px; } }
+        @media screen and (max-width: 420px) {
+          .main-content .current-content .wrap .project-links {
+            width: 200px;
+            height: 30px; } }
         .main-content .current-content .wrap .project-links:hover {
           -webkit-animation-name: buttonHover;
           -webkit-animation-duration: 0.2s;
@@ -269,6 +302,24 @@ body {
         background: -moz-linear-gradient(#0070b9, #00568e);
         /* For Firefox 3.6 to 15 */
         background: linear-gradient(#0070b9, #00568e); }
+        @media screen and (max-width: 900px) {
+          .main-content .current-content .wrap .video-content div.videos-label {
+            width: 150px;
+            height: 40px;
+            transform: translateY(-30px);
+            font-size: 2em;
+            border-radius: 40px;
+            margin-bottom: 0px;
+            padding-top: 15px; } }
+        @media screen and (max-width: 600px) {
+          .main-content .current-content .wrap .video-content div.videos-label {
+            width: 100px;
+            height: 30px;
+            transform: translateY(0px);
+            font-size: 2em;
+            border-radius: 20px;
+            margin-bottom: 0px;
+            padding-top: 10px; } }
       .main-content .current-content .wrap .video-content p {
         color: #fff;
         font-size: 2em;
@@ -307,6 +358,24 @@ body {
         background: -moz-linear-gradient(#004572, #000d15);
         /* For Firefox 3.6 to 15 */
         background: linear-gradient(#004572, #000d15); }
+        @media screen and (max-width: 900px) {
+          .main-content .current-content .wrap .contact-content div.contact-label {
+            width: 150px;
+            height: 40px;
+            transform: translateY(-30px);
+            font-size: 2em;
+            border-radius: 40px;
+            margin-bottom: 0px;
+            padding-top: 15px; } }
+        @media screen and (max-width: 600px) {
+          .main-content .current-content .wrap .contact-content div.contact-label {
+            width: 100px;
+            height: 30px;
+            transform: translateY(0px);
+            font-size: 2em;
+            border-radius: 20px;
+            margin-bottom: 0px;
+            padding-top: 10px; } }
       .main-content .current-content .wrap .contact-content .contact-wrap {
         background: url(images/wood.jpg);
         background-size: 100% 100%;
@@ -353,6 +422,24 @@ body {
           background: -moz-linear-gradient(#00568e, #004572);
           /* For Firefox 3.6 to 15 */
           background: linear-gradient(#00568e, #004572); }
+          @media screen and (max-width: 900px) {
+            .main-content .current-content .wrap .interests-content div.interests-label {
+              width: 150px;
+              height: 40px;
+              transform: translateY(-30px);
+              font-size: 2em;
+              border-radius: 40px;
+              margin-bottom: 0px;
+              padding-top: 15px; } }
+          @media screen and (max-width: 600px) {
+            .main-content .current-content .wrap .interests-content div.interests-label {
+              width: 100px;
+              height: 30px;
+              transform: translateY(0px);
+              font-size: 2em;
+              border-radius: 20px;
+              margin-bottom: 0px;
+              padding-top: 10px; } }
         .main-content .current-content .wrap .interests-content img.computer {
           height: 100px;
           width: 200px;
