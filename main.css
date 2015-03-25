@@ -4,12 +4,19 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, p {
   font-weight: normal; }
 
 html {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   font-size: 62.5%; }
+
+h3 {
+  font-family: "Raleway","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif; }
 
 body {
   background: url(images/water1.jpg) no-repeat fixed;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
 @-webkit-keyframes nameSlide {
   from {
@@ -22,7 +29,7 @@ body {
   from {
     transform: scale(1, 1); }
   to {
-    transform: scale(1.1, 1.1); } }
+    transform: scale(1.2, 1.2); } }
 .header {
   background: url(images/brown_texture.jpg);
   background-size: 100% 100%;
@@ -71,37 +78,68 @@ body {
   @media screen and (max-width: 1100px) {
     .main-content {
       width: 95%; } }
-  @media screen and (max-width: 590px) {
+  @media screen and (max-width: 640px) {
     .main-content {
       width: 100%;
       border-radius: 0;
-      padding: 0 0 10px 0; } }
+      padding: 0 0 10px 0; }
+      .main-content .projects {
+        background: -webkit-linear-gradient(#0399fb, #0070b9);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#0399fb, #0070b9);
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#0399fb, #0070b9);
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#0399fb, #0070b9); }
+      .main-content .videos {
+        background: -webkit-linear-gradient(#0070b9, #00568e);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#0070b9, #00568e);
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#0070b9, #00568e);
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#0070b9, #00568e); }
+      .main-content .interests {
+        background: -webkit-linear-gradient(#00568e, #004572);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#00568e, #004572);
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#00568e, #004572);
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#00568e, #004572); }
+      .main-content .contact {
+        background: -webkit-linear-gradient(#004572, #000d15);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#004572, #000d15);
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#004572, #000d15);
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#004572, #000d15); } }
   .main-content ul.list-options {
     background: url(images/board1.png);
     background-size: 100% 100%;
     list-style-type: none;
     padding: 20px;
     margin-bottom: 40px;
-    text-align: center; }
-    @media screen and (max-width: 600px) {
+    text-align: center;
+    font-family: "Raleway","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif; }
+    @media screen and (max-width: 640px) {
       .main-content ul.list-options {
         padding: 10px 0;
         margin-bottom: 10px;
         background: none; } }
     .main-content ul.list-options li {
-      text-shadow: 0 0 20px #000;
-      padding-top: 20px;
+      text-shadow: 2px 2px 2px #444;
+      padding-top: 15px;
       text-align: center;
-      border: 3px solid #fff;
       border-radius: 20px;
       display: inline-block;
       width: 15%;
       margin: 2%;
       height: 50px;
       color: #fff;
-      font-size: 2.5em;
-      font-weight: bold;
-      box-shadow: 3px 3px 30px 10px #000; }
+      font-size: 3em;
+      text-decoration: underline; }
       @media screen and (max-width: 880px) {
         .main-content ul.list-options li {
           font-size: 1.8em;
@@ -114,45 +152,13 @@ body {
           width: 22%;
           height: 30px;
           border: 1px solid #fff;
-          border-radius: 5px; } }
+          border-radius: 5px;
+          text-decoration: none; } }
       .main-content ul.list-options li:hover {
         -webkit-animation-name: buttonHover;
         -webkit-animation-duration: 0.2s;
         -webkit-animation-fill-mode: forwards;
-        cursor: pointer;
-        box-shadow: 0 0 30px 12px #000; }
-    .main-content ul.list-options .projects {
-      background: -webkit-linear-gradient(#0399fb, #0070b9);
-      /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#0399fb, #0070b9);
-      /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#0399fb, #0070b9);
-      /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#0399fb, #0070b9); }
-    .main-content ul.list-options .videos {
-      background: -webkit-linear-gradient(#0070b9, #00568e);
-      /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#0070b9, #00568e);
-      /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#0070b9, #00568e);
-      /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#0070b9, #00568e); }
-    .main-content ul.list-options .interests {
-      background: -webkit-linear-gradient(#00568e, #004572);
-      /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#00568e, #004572);
-      /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#00568e, #004572);
-      /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#00568e, #004572); }
-    .main-content ul.list-options .contact {
-      background: -webkit-linear-gradient(#004572, #000d15);
-      /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#004572, #000d15);
-      /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#004572, #000d15);
-      /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#004572, #000d15); }
+        cursor: pointer; }
   .main-content .current-content {
     padding: 50px; }
     @media screen and (max-width: 1100px) {
@@ -170,36 +176,44 @@ body {
           border-radius: 20px; } }
       .main-content .current-content .wrap h2 {
         margin-bottom: 20px;
-        font-size: 1.7em;
+        font-size: 2.1em;
         line-height: 30px; }
         @media screen and (max-width: 600px) {
           .main-content .current-content .wrap h2 {
             font-size: 1.5em;
             line-height: 25px; } }
       .main-content .current-content .wrap h3 {
-        font-weight: bold;
         color: #111;
-        font-size: 1.7em; }
+        font-size: 1.8em;
+        line-height: 25px;
+        font-style: normal;
+        text-rendering: auto; }
         @media screen and (max-width: 600px) {
           .main-content .current-content .wrap h3 {
             font-size: 1.5em;
             line-height: 20px; } }
       .main-content .current-content .wrap .profile-img {
-        box-shadow: -10px -10px 30px 0px #000;
-        -ms-transform: translate(-40px, -40px);
+        background: url(images/profileP.jpg);
+        background-size: 100% 100%;
+        box-shadow: 0px 0px 20px 0px #000, inset 0 0 10px 0px #000;
+        -ms-transform: translate(-10px, -40px);
         -webkit-transform: translate(-40px, -40px);
-        transform: translate(-60px, -60px);
-        margin: 10px -50px -50px 10px;
+        transform: translate(-10px, -10px);
+        margin: 0 10px 10px 0;
         float: left;
         display: inline-block;
         width: 250px;
         height: 250px;
-        border-radius: 50px;
-        border-top: 5px solid #fff;
-        border-left: 5px solid #fff; }
+        border-radius: 50px; }
         @media screen and (max-width: 860px) {
           .main-content .current-content .wrap .profile-img {
             display: none; } }
+      .main-content .current-content .wrap .skills {
+        color: #444;
+        font-size: 2.3em;
+        border-radius: 60px;
+        text-shadow: 1px 1px 1px #999;
+        line-height: 32px; }
       .main-content .current-content .wrap div.projects-label {
         transform: translateY(-70px);
         font-size: 3em;

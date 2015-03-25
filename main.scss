@@ -4,12 +4,19 @@ html, body, h1, h2, h3, h4, h5, li, ul, ol, input, select, div, p{
 	font-weight: normal;
 }
 html {
-	font-family:Helvetica, Arial, sans-serif;
+	font-family: "Roboto","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 	font-size: 62.5%;
+}
+h3 {
+	font-family: "Raleway","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 body {
 	background: url(images/water1.jpg) no-repeat fixed;
 	background-size: 100% 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 //new colors
@@ -88,7 +95,7 @@ $color-4-d: #006666;
 	}
 @-webkit-keyframes buttonHover {
     from {transform: scale(1,1);}
-    to {transform: scale(1.1,1.1);}
+    to {transform: scale(1.2,1.2);}
 	}
 
 
@@ -144,10 +151,23 @@ $color-4-d: #006666;
 	@media screen and (max-width: 1100px) {
     	width: 95%;
   	}
-  	@media screen and (max-width: 590px) {
+  	@media screen and (max-width: 640px) {
     	width: 100%;
     	border-radius: 0;
     	padding: 0 0 10px 0;
+
+    	.projects {
+							@include gradientHue($color2-1-l, $color2-1-lm);
+						}
+				.videos {
+							@include gradientHue($color2-1-lm, $color2-1-m);
+						}
+				.interests {
+							@include gradientHue($color2-1-m, $color2-1-md);
+						}
+				.contact {
+							@include gradientHue($color2-1-md, $color2-1-d);
+						}
   	}
 
 		ul.list-options {
@@ -157,28 +177,27 @@ $color-4-d: #006666;
 			padding: 20px;
 			margin-bottom: 40px;
 			text-align: center;
+			font-family: "Raleway","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 			@media screen and (max-width: 1100px) {
     			
   			}
-			@media screen and (max-width: 600px) {
+			@media screen and (max-width: 640px) {
     			padding: 10px 0;
     			margin-bottom: 10px;
     			background: none;
   			}
 				li {
-					text-shadow: 0 0 20px #000;
-					padding-top: 20px;
+					text-shadow: 2px 2px 2px #444;
+					padding-top: 15px;
 					text-align: center;
-					border: 3px solid #fff;
 					border-radius: 20px;
 					display: inline-block;
 					width: 15%;
 					margin: 2%;
 					height: 50px;
 					color: #fff;
-					font-size: 2.5em;
-					font-weight: bold;
-					box-shadow: 3px 3px 30px 10px #000;
+					font-size: 3em;
+					text-decoration: underline;
 					@media screen and (max-width: 880px) {
     					font-size: 1.8em;
     					height: 30px;
@@ -191,28 +210,18 @@ $color-4-d: #006666;
     					height: 30px;
     					border: 1px solid #fff;
 						border-radius: 5px;
+						text-decoration: none;
   					}
 					&:hover {
 						-webkit-animation-name: buttonHover;
     	                -webkit-animation-duration: 0.2s;
     	                -webkit-animation-fill-mode: forwards;
 						cursor: pointer;
-						box-shadow: 0 0 30px 12px #000;
 					}
 
 				}
-				.projects {
-							@include gradientHue($color2-1-l, $color2-1-lm);
-						}
-				.videos {
-							@include gradientHue($color2-1-lm, $color2-1-m);
-						}
-				.interests {
-							@include gradientHue($color2-1-m, $color2-1-md);
-						}
-				.contact {
-							@include gradientHue($color2-1-md, $color2-1-d);
-						}						
+										
+						
 		}
 	.current-content {
 		padding: 50px;
@@ -234,7 +243,7 @@ $color-4-d: #006666;
 					
 				h2 {
 					margin-bottom: 20px;
-					font-size: 1.7em;
+					font-size: 2.1em;
 					line-height: 30px;
 					@media screen and (max-width: 600px) {
     						font-size: 1.5em;
@@ -243,9 +252,11 @@ $color-4-d: #006666;
 				}
 
 				h3 {
-						font-weight: bold;
 						color: #111;
-						font-size: 1.7em; 
+						font-size: 1.8em; 
+						line-height: 25px;
+						font-style: normal;
+						text-rendering: auto;
 						@media screen and (max-width: 600px) {
     						font-size: 1.5em;
 							line-height: 20px;
@@ -256,21 +267,29 @@ $color-4-d: #006666;
 				//this scss/css is dedicated for the "MAIN" content
 
 					.profile-img {
-						box-shadow: -10px -10px 30px 0px #000;
-						-ms-transform: translate(-40px, -40px);
+						background: url(images/profileP.jpg);
+						background-size: 100% 100%;
+						box-shadow: 0px 0px 20px 0px #000, inset 0 0 10px 0px #000;
+						-ms-transform: translate(-10px, -40px);
   						-webkit-transform: translate(-40px, -40px);
-  						transform: translate(-60px, -60px);
-  						margin: 10px -50px -50px 10px;
+  						transform: translate(-10px, -10px);
+  						margin: 0 10px 10px 0;
 						float: left;
 						display: inline-block;
 						width: 250px;
 						height: 250px;
 						border-radius: 50px;
-						border-top: 5px solid #fff;
-						border-left: 5px solid #fff;
+
 						@media screen and (max-width: 860px) {
     						display: none;
   						}
+					}
+					.skills {
+						color: #444;
+						font-size: 2.3em;
+						border-radius: 60px;
+						text-shadow: 1px 1px 1px #999;
+						line-height: 32px;
 					}
 				//this scss/css is dedicated for the "PROJECTS" content
 
