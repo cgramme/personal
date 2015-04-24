@@ -116,7 +116,7 @@ $color-4-d: #006666;
     		width: 100%;
   		}
 
-	img {
+	.name-logo {
 		padding: 10px 0 0 20px;
 		position: relative;
 		@media screen and (max-width: 590px) {
@@ -262,7 +262,7 @@ $color-4-d: #006666;
 							line-height: 20px;
   						}
 					}
-				//everything below this point are changes made for specific ajax requests and thier content
+				//Below this point are changes made for specific ajax requests and thier content
 
 				//this scss/css is dedicated for the "MAIN" content
 
@@ -285,11 +285,16 @@ $color-4-d: #006666;
   						}
 					}
 					.skills {
+						margin-top: 20px;
 						color: #444;
-						font-size: 2.3em;
-						border-radius: 60px;
+						font-size: 2em;
 						text-shadow: 1px 1px 1px #999;
 						line-height: 32px;
+						@media screen and (max-width: 600px) {
+    						font-size: 1.5em;
+    						line-height: 22px;
+    						margin-top: 0;
+  						}
 					}
 				//this scss/css is dedicated for the "PROJECTS" content
 
@@ -297,57 +302,69 @@ $color-4-d: #006666;
 					@include sectionLabel();
 					@include gradientHue($color2-1-l, $color2-1-lm);
 				}
+				ul {
+					list-style-type: none;
+				}
 				.wrapper {
-					background: url(images/wood.jpg);
-					background-size: 100% 100%;
+					background: url(images/darkwood2.jpg);
+					border-radius: 40px;
+					border: 1px solid #fff;
 					padding: 20px;
 					margin: 20px;
-					border-radius: 30px;
-					box-shadow: 0 0 20px 0 #000;
-					@media screen and (max-width: 900px) {
-    						margin: 5px;
-  						}
+					box-shadow: 2px 2px 10px 2px #000;
+					
+					h2 {
+						font-size: 3.5em;
+						text-shadow: 1px 1px 5px #000;
+						font-weight: bold;
+						color: #fff;
+						font-family: "Roboto","Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+					}
+					p {
+						color: #aaa;
+						font-weight: bold;
+						font-size: 1.7em;
+						font-family: "Open Sans","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+						text-shadow: 1px 1px 3px #000;
+					}
+					.technologies {
+						border: 1px solid #aaa;
+						padding: 7px;
+						display: inline-block;
+						border-radius: 10px;
+						margin-top: 10px;
+						background-color: #222;
+						margin-bottom: 10px;
+						box-shadow: 2px 2px 5px 2px #000;
+
 						h3 {
+							font-size: 1.8em;
 							color: #fff;
-							text-shadow: 0 0 10px #000;
+							text-shadow: 1px 1px 5px #000;
 						}
-				}
-				.project-links {
-					height: 70px;
-					width: 500px;
-					background: url(images/dark_texture.jpg);
-					background-size: 100% 100%;
-					margin: 10px 10px 10px 0;
-					border-radius: 20px;
-					box-shadow: 0 0 20px 0 #000;
-					text-align: center;
-					padding: 5px;
-					@media screen and (max-width: 700px) {
-    						width: 400px;
-    						height: 50px;
-  						}
-  						@media screen and (max-width: 530px) {
-    						width: 300px;
-    						height: 40px;
-  						}
-  						@media screen and (max-width: 420px) {
-    						width: 200px;
-    						height: 30px;
-  						}
-					&:hover {
-						-webkit-animation-name: buttonHover;
-    	                -webkit-animation-duration: 0.2s;
-    	                -webkit-animation-fill-mode: forwards;
+					}
+
+					button {
+						padding: 10px;
+						font-size: 1.8em;
+						color: #fff;
+						text-shadow: 1px 1px 5px #000;
+						border-radius: 20px;
+						box-shadow: 2px 2px 5px 2px #000;
+						margin-right: 10px;
 						cursor: pointer;
-						box-shadow: 0 0 20px 0 #000;
+						&:hover {
+							box-shadow: 2px 2px 6px 3px #000;
+						}
 					}
-					img {
-						width: 90%;
-						height: 100%;
+					.view-site {
+						background-color: #387a43;
 					}
-
-
+					.view-code {
+						background-color: #384d7a;
+					}
 				}
+				
 
 				//"VIDEOS" content below
 				.video-content {
@@ -502,5 +519,11 @@ $color-4-d: #006666;
 }
 .center-text {
 	text-align: center;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
 }
 
