@@ -38,7 +38,7 @@
 								<div>
 									<div class="technologies"><h3>Technologies: HTML5, CSS3, Javascript, JQuery</h3></div>
 								</div>
-								<button class="view-site" onclick="window.open('http://coolcavegame.droppages.com/')">View website</button><button class="view-code">View code @ Github</button>
+								<button class="view-site" onclick="window.open('http://cgramme.github.io/coolcavegems/')">View website</button><button class="view-code" onclick="window.open('https://github.com/cgramme/coolcavegems')">View code @ Github</button>
 							</div>
 						</li>
 						<li>
