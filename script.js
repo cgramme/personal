@@ -22,7 +22,6 @@ $(document).ready(function(){
 	}
 
 	$('.projects').click(function() {
-		alert($(window).width());
   	loadXMLDoc("projects.txt","change-content");
 	});
 	$('.videos').click(function() {
