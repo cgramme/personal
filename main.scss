@@ -499,7 +499,7 @@ $color-4-d: #006666;
 				//"INTERESTS" content below
 
 				.interests-content {
-					padding: 10px;
+					padding-bottom: 10px;
 					div.interests-label {
 						@include sectionLabel();
 						@include gradientHue($color2-1-m, $color2-1-md);
