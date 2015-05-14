@@ -36,8 +36,7 @@ body {
   to {
     transform: scale(1.2, 1.2); } }
 .header {
-  background: url(images/brown_texture.jpg);
-  background-size: 100% 100%;
+  background: url(images/repeat2.jpg);
   width: 1100px;
   background-color: #fff;
   border: 1px solid #000;
@@ -72,8 +71,7 @@ body {
         padding: 5px 10px; } }
 
 .main-content {
-  background: url(images/bamboo.jpg);
-  background-size: 100% 100%;
+  background: url(images/bamboo_pattern.jpg) repeat;
   width: 1000px;
   margin: 30px auto;
   padding: 15px;
@@ -134,7 +132,7 @@ body {
         margin-bottom: 10px;
         background: none; } }
     .main-content ul.list-options li {
-      text-shadow: 2px 2px 2px #444;
+      text-shadow: 2px 2px 5px #000;
       padding-top: 15px;
       text-align: center;
       border-radius: 20px;
