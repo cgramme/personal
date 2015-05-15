@@ -38,10 +38,12 @@ $(document).ready(function(){
 	});
 
 
-	$('.profile-img').click(function() {
-  	alert($('body').width());
-	});
+	
 
 	
+});
+
+$(document).on('click', '.android', function () {
+    loadXMLDoc("android.txt","change-content");
 });
 
