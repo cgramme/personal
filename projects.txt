@@ -49,7 +49,7 @@
 								<div>
 									<div class="technologies"><h3>Technologies: Java, SQlite, XML</h3></div>
 								</div>
-								<button class="view-site" onclick="window.open('http://cgramme.github.io/androidsite/')">View website</button><button class="view-code" onclick="window.open('https://github.com/cgramme/androidsite')">View code @ Github</button>
+								<button class="view-site" onclick="window.open('http://cgramme.github.io/androidsite/')">View website</button><button class="view-code" onclick="window.open('https://github.com/cgramme/androidsite')">View code @ Github</button><button class="view-code android">Android experience</button>
 							</div>
 						</li>
 						<li>

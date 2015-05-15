@@ -33,6 +33,9 @@ $(document).ready(function(){
 	$('.interests').click(function() {
   	loadXMLDoc("interests.txt","change-content");
 	});
+	$('.android').click(function() {
+  	loadXMLDoc("android.txt","change-content");
+	});
 
 
 	$('.profile-img').click(function() {
