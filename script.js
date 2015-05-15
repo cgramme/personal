@@ -19,9 +19,6 @@ $(document).ready(function(){
 	$('.interests').click(function() {
   	loadXMLDoc("interests.txt","change-content");
 	});
-	$('.android').click(function() {
-  	loadXMLDoc("android.txt","change-content");
-	});
 
 
 	
@@ -31,6 +28,7 @@ $(document).ready(function(){
 
 $(document).on('click', '.android', function () {
     loadXMLDoc("android.txt","change-content");
+    $(window).scrollTop();
 });
 
 function loadXMLDoc(url, elementId){
