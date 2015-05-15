@@ -28,7 +28,7 @@ $(document).ready(function(){
 
 $(document).on('click', '.android', function () {
     loadXMLDoc("android.txt","change-content");
-    $('html, body').scrollTop(500);
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
 });
 
 function loadXMLDoc(url, elementId){
