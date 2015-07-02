@@ -160,21 +160,21 @@ $color-4-d: #006666;
     	padding: 0 0 10px 0;
 
     	.projects {
-							@include gradientHue($color2-1-l, $color2-1-lm);
-						}
-				.videos {
-							@include gradientHue($color2-1-lm, $color2-1-m);
-						}
-				.interests {
-							@include gradientHue($color2-1-m, $color2-1-md);
-						}
-				.contact {
-							@include gradientHue($color2-1-md, $color2-1-d);
-						}
+			@include gradientHue($color2-1-l, $color2-1-lm);
+		}
+		.videos {
+			@include gradientHue($color2-1-lm, $color2-1-m);
+		}
+		.interests {
+			@include gradientHue($color2-1-m, $color2-1-md);
+		}
+		.contact {
+			@include gradientHue($color2-1-md, $color2-1-d);
+		}
   	}
 
 		ul.list-options {
-			background: url(images/board1.png);
+			background: url(images/board1s.png);
 			background-size: 100% 100%;
 			list-style-type: none;
 			padding: 20px;
