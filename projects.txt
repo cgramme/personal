@@ -43,6 +43,16 @@
 						</li>
 						<li>
 							<div class="wrapper">
+								<h2>Supercar Challenge</h2>
+								<p class="indent">Supercar Challenge is a game I created utilizing JQuery Mobile as mobile friendly driving force. This source code was also created in a way for easy duplication of similar type quiz games. Test your knowledge of some of the most recent and iconic supercars in existence in this classic quiz. Do you have what it takes? Find out now with this simple quiz, no matter what screen size or devic you have!</p>
+								<div>
+									<div class="technologies"><h3>Technologies: HTML5, CSS3, Sass, Javascript, JQuery, JQuery Mobile</h3></div>
+								</div>
+								<button class="view-site" onclick="window.open('http://cgramme.github.io/supercarquiz/')">View website</button><button class="view-code" onclick="window.open('https://github.com/cgramme/supercarquiz')">View code @ Github</button>
+							</div>
+						</li>
+						<li>
+							<div class="wrapper">
 								<h2>Car Maintenance and Fuel</h2>
 								<p class="indent">This is an Android application I created years back as my first coding project and is the reason I fell in love with programming altogether. I simply had an idea which I thought would be succesful and went through the procceses of learning how to code as I created it. This is one of the biggest challenges and accomplishments I have encountered on my coding journey so far. Going from not knowing anything about coding to producing a polished Android product and then creating a "Pro" version was a challenge I loved and never gave up on. The free version reached just under 50,000 downloads in the first two years and the pro version reaching 1000 downloads in a year at $3.49. It may not have been a retirement project, but it was certainly an enjoyable and gratifying procces.</p>
 								<p class="indent">I have improved my ability to code over the past few year quite a bit and have plans to rerelease a simular even more polished version of this app for both Iphone and Android systems. Even though I consider Car Maintenance and Fuel to be a success I see many ways to improve the code and functionality, starting on a blank slate.</p>
