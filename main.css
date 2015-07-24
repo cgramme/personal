@@ -43,10 +43,7 @@ body {
   box-shadow: 0 0 50px 10px #000, 0 0 20px 0 #000;
   margin: -2px auto 0 auto;
   border-radius: 0 0 60px 60px; }
-  @media screen and (max-width: 1150px) {
-    .header {
-      width: 95%; } }
-  @media screen and (max-width: 590px) {
+  @media screen and (max-width: 1100px) {
     .header {
       border-radius: 0;
       width: 100%; } }
@@ -55,7 +52,7 @@ body {
     position: relative; }
     @media screen and (max-width: 590px) {
       .header .name-logo {
-        width: 95%;
+        width: 100%;
         padding: 10px 0 0 0; } }
   .header h2 {
     padding: 10px 40px;
@@ -80,11 +77,11 @@ body {
   box-shadow: 0 0 50px 10px #000, inset 0 0 10px 2px #000; }
   @media screen and (max-width: 1100px) {
     .main-content {
-      width: 95%; } }
-  @media screen and (max-width: 640px) {
-    .main-content {
       width: 100%;
       border-radius: 0;
+      padding: 15px 0; } }
+  @media screen and (max-width: 640px) {
+    .main-content {
       padding: 0 0 10px 0; }
       .main-content .projects {
         background: -webkit-linear-gradient(#0399fb, #0070b9);
@@ -147,14 +144,16 @@ body {
         .main-content ul.list-options li {
           font-size: 1.8em;
           height: 30px;
-          padding-top: 10px; } }
+          padding-top: 10px;
+          margin: 0 2px; } }
       @media screen and (max-width: 640px) {
         .main-content ul.list-options li {
           font-size: 1.5em;
           margin: 0;
           width: 22%;
           height: 30px;
-          border: 1px solid #fff;
+          border: 0px solid #fff;
+          box-shadow: 1px 1px 5px 0 #000;
           border-radius: 5px;
           text-decoration: none; } }
       .main-content ul.list-options li:hover {
