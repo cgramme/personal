@@ -120,7 +120,7 @@ body {
     background-size: 100% 100%;
     list-style-type: none;
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-align: center;
     font-family: "Raleway","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif; }
     @media screen and (max-width: 640px) {
@@ -211,7 +211,7 @@ body {
           .main-content .current-content .wrap .profile-img {
             display: none; } }
       .main-content .current-content .wrap .skills {
-        margin-top: 20px;
+        margin-top: 0px;
         color: #444;
         font-size: 2em;
         text-shadow: 1px 1px 1px #999;
@@ -221,6 +221,18 @@ body {
             font-size: 1.5em;
             line-height: 22px;
             margin-top: 0; } }
+      .main-content .current-content .wrap .resume button {
+        float: right;
+        padding: 5px 10px;
+        background-color: #384d7a;
+        font-size: 1.8em;
+        color: #fff;
+        text-shadow: 1px 1px 5px #000;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px 2px #000;
+        cursor: pointer; }
+        .main-content .current-content .wrap .resume button:hover {
+          box-shadow: 2px 2px 6px 3px #000; }
       .main-content .current-content .wrap div.projects-label {
         transform: translateY(-70px);
         font-size: 3em;

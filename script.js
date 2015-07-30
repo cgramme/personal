@@ -1,12 +1,4 @@
-
-
-
 $(document).ready(function(){
-
-	
-
-
-
 	$('.projects').click(function() {
   	loadXMLDoc("projects.txt","change-content");
 	});
@@ -19,18 +11,11 @@ $(document).ready(function(){
 	$('.interests').click(function() {
   	loadXMLDoc("interests.txt","change-content");
 	});
-
-
-	
-
-	
 });
-
 $(document).on('click', '.android', function () {
     loadXMLDoc("android.txt","change-content");
     $('html, body').animate({ scrollTop: 0 }, 'slow');
 });
-
 function loadXMLDoc(url, elementId){
 		var xmlhttp;
 		if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
