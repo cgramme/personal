@@ -65,7 +65,7 @@ $color-4-d: #006666;
 	color: #fff;
 	width: 200px;
 	height: 70px;
-	text-shadow: 0 0 10px #000;
+	text-shadow: 1px 1px 2px #222;
 	margin-bottom: -50px;
 	@media screen and (max-width: 900px) {
     	width: 150px;
@@ -257,7 +257,7 @@ $color-4-d: #006666;
 				}
 
 				h3 {
-						color: #111;
+						color: #222;
 						font-size: 1.8em; 
 						line-height: 25px;
 						font-style: normal;
@@ -439,6 +439,9 @@ $color-4-d: #006666;
 						border-radius: 10px;
 						margin: 20px 5px 5px 5px;
 						box-shadow: 0 0 10px 2px #000;
+						h3 {
+							color: #ccc;
+						}
 						iframe {
 							margin-top: 5px;
 							width: 340px;

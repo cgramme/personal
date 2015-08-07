@@ -191,7 +191,7 @@ body {
             font-size: 1.5em;
             line-height: 25px; } }
       .main-content .current-content .wrap h3 {
-        color: #111;
+        color: #222;
         font-size: 1.8em;
         line-height: 25px;
         font-style: normal;
@@ -250,7 +250,7 @@ body {
         color: #fff;
         width: 200px;
         height: 70px;
-        text-shadow: 0 0 10px #000;
+        text-shadow: 1px 1px 2px #222;
         margin-bottom: -50px;
         background: -webkit-linear-gradient(#0399fb, #0070b9);
         /* For Safari 5.1 to 6.0 */
@@ -355,7 +355,7 @@ body {
           color: #fff;
           width: 200px;
           height: 70px;
-          text-shadow: 0 0 10px #000;
+          text-shadow: 1px 1px 2px #222;
           margin-bottom: -50px;
           background: -webkit-linear-gradient(#0070b9, #00568e);
           /* For Safari 5.1 to 6.0 */
@@ -406,6 +406,8 @@ body {
           border-radius: 10px;
           margin: 20px 5px 5px 5px;
           box-shadow: 0 0 10px 2px #000; }
+          .main-content .current-content .wrap .video-content .video-container h3 {
+            color: #ccc; }
           .main-content .current-content .wrap .video-content .video-container iframe {
             margin-top: 5px;
             width: 340px;
@@ -429,7 +431,7 @@ body {
         color: #fff;
         width: 200px;
         height: 70px;
-        text-shadow: 0 0 10px #000;
+        text-shadow: 1px 1px 2px #222;
         margin-bottom: -50px;
         background: -webkit-linear-gradient(#004572, #000d15);
         /* For Safari 5.1 to 6.0 */
@@ -512,7 +514,7 @@ body {
           color: #fff;
           width: 200px;
           height: 70px;
-          text-shadow: 0 0 10px #000;
+          text-shadow: 1px 1px 2px #222;
           margin-bottom: -50px;
           background: -webkit-linear-gradient(#00568e, #004572);
           /* For Safari 5.1 to 6.0 */
