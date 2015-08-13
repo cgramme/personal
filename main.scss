@@ -235,12 +235,26 @@ $color-4-d: #006666;
   		}
 
 		//The class of "wrap" will be the container for all ajax content requests
+		.main-wrap.wrap {
+					border: 1px solid #000;
+					background-color: #fff;
+					padding: 30px;
+					border-radius: 145px 40px 70px 70px;
+					//box-shadow: 0 0 40px 10px #000, inset 0 0 5px 0 #000;
+					@media screen and (max-width: 860px) {
+    						border-radius: 40px;
+  						}
+					@media screen and (max-width: 600px) {
+    						padding: 10px;
+    						border-radius: 20px;
+  						}
+				}
 			.wrap {
 					border: 1px solid #000;
 					background-color: #fff;
 					padding: 30px;
 					border-radius: 70px;
-					box-shadow: 0 0 40px 10px #000, inset 0 0 5px 0 #000;
+					box-shadow: 1px 1px 40px 3px #000, inset 0 0 5px 0 #000;
 					@media screen and (max-width: 600px) {
     						padding: 10px;
     						border-radius: 20px;
@@ -269,13 +283,12 @@ $color-4-d: #006666;
 					}
 				//Below this point are changes made for specific ajax requests and thier content
 
-				//this scss/css is dedicated for the "MAIN" content
+				//this scss/css is for the "MAIN" content
 
 					.profile-img {
 						background: url(images/profileP.jpg);
 						background-size: 100% 100%;
 						box-shadow: 1px 1px 5px 2px #555;
-						-ms-transform: translate(-10px, -40px);
   						-webkit-transform: translate(-40px, -40px);
   						transform: translate(-10px, -10px);
   						margin: 0 10px 10px 0;
@@ -305,14 +318,24 @@ $color-4-d: #006666;
 					.resume {
 						button {
 							float: right;
-							padding: 5px 10px;
+							height: 50px;
+							width: 100px;
 							background-color: #384d7a;
 							font-size: 1.8em;
 							color: #fff;
 							text-shadow: 1px 1px 5px #000;
-							border-radius: 20px;
+							border-radius: 25px;
 							box-shadow: 2px 2px 5px 2px #000;
 							cursor: pointer;
+							-webkit-transform: translate(-40px, -40px);
+  							transform: translate(14px, -15px);
+  							@media screen and (max-width: 600px) {
+    							-webkit-transform: translate(0, 0);
+  								transform: translate(0, 0);
+  								width: auto;
+  								height: auto;
+  								padding: 5px 10px;
+  							}
 							&:hover {
 								box-shadow: 2px 2px 6px 3px #000;
 							}
