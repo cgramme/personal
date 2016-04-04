@@ -4,7 +4,12 @@
 		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' type='text/css'>
 	</head>
 	<body>
-		<a href="http://www.chrisgramme.com"><p>Chris Gramme.com<br />has moved<br />Click here to enter</p></a>
+		<a href="http://www.chrisgramme.com">
+			<div>
+				<img src="images/profile_sketch_chris_2.png" alt="Chris Gramme art picture" />
+				<p><span>Chris Gramme.com</span><br />has moved<br />Click here to enter</p>
+			</div>
+		</a>
 	
 		<!--  
 			CSS text and button styling.
@@ -17,11 +22,12 @@
 				bottom: 0;
 				height: 100%;
 				width: 100%;
-				background-color: #000;
+				background-color: #fff;
+				overflow: hidden;
 			}
-			p{  
-				width: 400px;
-				height: 200px;
+			div {
+				width: 700px;
+				height: 300px;
 				position: absolute;
 			    top:0;
 			    bottom: 0;
@@ -29,9 +35,24 @@
 			    right: 0;
 			    text-align: center;
 			    margin: auto;
-			 	color: #ddd;
+			}
+			img {
+				vertical-align: middle;
+				display: inline-block;
+				width: 200px;
+				height: 230px;
+			}
+			p{  
+				vertical-align: middle;
+				display: inline-block;
+			 	color: #222;
 			 	font-size: 50px;
 			 	font-family: "Open Sans Condensed";
+			}
+			div:hover {
+				transform: scale(1.1);
+				-webkit-transform: scale(1.1);
+				transition: transform 3s;
 			}
 		</style>
 	</body>
