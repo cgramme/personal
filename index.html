@@ -7,7 +7,7 @@
 		<a href="http://www.chrisgramme.com">
 			<div>
 				<img src="images/profile_sketch_chris_2.png" alt="Chris Gramme art picture" />
-				<p><span>Chris Gramme.com</span><br />has moved<br />Click here to enter</p>
+				<p><span>ChrisGramme.com</span><br />has moved<br />Click here to enter</p>
 			</div>
 		</a>
 	
@@ -22,11 +22,11 @@
 				bottom: 0;
 				height: 100%;
 				width: 100%;
-				background-color: #fff;
+				background: linear-gradient(45deg, #fff, #999);
 				overflow: hidden;
 			}
 			div {
-				width: 700px;
+				width: 600px;
 				height: 300px;
 				position: absolute;
 			    top:0;
@@ -35,6 +35,7 @@
 			    right: 0;
 			    text-align: center;
 			    margin: auto;
+			    transition: transform 3s;
 			}
 			img {
 				vertical-align: middle;
@@ -42,7 +43,8 @@
 				width: 200px;
 				height: 230px;
 			}
-			p{  
+			p{ 
+			    width: 350px;
 				vertical-align: middle;
 				display: inline-block;
 			 	color: #222;
@@ -53,6 +55,18 @@
 				transform: scale(1.1);
 				-webkit-transform: scale(1.1);
 				transition: transform 3s;
+			}
+			@media screen and (max-width: 580px) {
+				div {
+					bottom: auto;
+					width: 280px;
+					margin-top: 30px;
+				}
+				p {
+					font-size: 40px;
+					width: 280px;
+					margin-top: -10px;
+				}
 			}
 		</style>
 	</body>
